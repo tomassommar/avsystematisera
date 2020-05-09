@@ -34,7 +34,7 @@ var inventory stores
 
 func init() {
 	pwd, _ := os.Getwd()
-	data, _ := ioutil.ReadFile(filepath.Join(pwd, "butiker.xml"))
+	data, _ := ioutil.ReadFile(filepath.Join(pwd, "../resources/stores.xml"))
 	x := xml.Unmarshal(data, &inventory)
 	if x != nil {
 		panic(x)

@@ -2,17 +2,17 @@ package main
 
 import (
 	"fmt"
-	"repository"
+	"github.com/tomassommar/avsystematisera/repository"
 )
 
 func main() {
 	stores := repository.GetStores()
 	for _, element := range stores {
-		fmt.Println(string(element.ID))
-		fmt.Println(string(element.Name))
-		fmt.Println(string(element.Street))
-		fmt.Println(string(element.City))
-		fmt.Println(string(element.PostalCode))
+		fmt.Println(element.ID)
+		fmt.Println(element.Name)
+		fmt.Println(element.Street)
+		fmt.Println(element.City)
+		fmt.Println(element.PostalCode)
 	}
 
 }
