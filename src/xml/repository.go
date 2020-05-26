@@ -12,6 +12,6 @@ func(repository XmlRepository) Stores() []repository.Store {
 	return storeInventory.Stores()
 }
 
-func (store xmlStore) GetArticles() []int{
+func (store xmlStore) GetProducts() []int{
 	return storeProductMapping[store.XmlId]
 }

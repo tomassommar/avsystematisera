@@ -18,7 +18,7 @@ func main() {
 	for _, store := range stores{
 		fmt.Println(store.Coordinates())
 	}
-	//articles := stores[0].GetArticles()
+	//articles := stores[0].GetProducts()
 	//for _, article := range articles{
 	//	fmt.Println(article)
 	//}

@@ -13,7 +13,7 @@ type Store interface {
 	PostalCode() string
 	PhoneNumber() string
 	Coordinates() (float64,float64)
-	GetArticles() []int
+	GetProducts() []int
 }
 
 type Product interface {
